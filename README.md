@@ -34,4 +34,6 @@ MORE FUN with Functional Programming
 1. EDU - [Making Your C# Code More Functional](https://www.pluralsight.com/courses/making-functional-csharp)
 1. SRC - [CSharpFunctionalExtensions](https://github.com/vkhorikov/CSharpFunctionalExtensions)
 1. SRC - [Category Theory for DotNET Programmers](https://github.com/cboudereau/category-theory-for-dotnet-programmers)
+1. SRC - [LanguageExt](https://github.com/louthy/language-ext)
 1. PPT - [Category Theory for Beginners](https://www.slideshare.net/kenbot/category-theory-for-beginners), [Youtube](https://www.youtube.com/watch?v=jDhMDgU7Koc)
+1. MOV - [Algebraic Data Types for C# - John Azariah](https://www.youtube.com/watch?v=CUdp1XGwRng&list=PL03Lrmd9CiGdch9Ul3PynPDZcZ18sz9KV&index=39)
