@@ -1,4 +1,4 @@
-# Learning-FunctionalProgramming
+# Learning Functional Programming
 MORE FUN with Functional Programming
 
 ## BOOKs - DOING
