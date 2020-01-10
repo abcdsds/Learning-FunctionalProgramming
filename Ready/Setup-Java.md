@@ -1,5 +1,5 @@
 1. JDK 최신 버전을 설치한다(2020년 1월 7일 기준).
-   - [jdk-13.0.1_windows-x64_bin.exe 다운로드](https://download.oracle.com/otn-pub/java/jdk/13.0.1+9/cec27d702aa74d5a8630c65ae61e4305/jdk-13.0.1_windows-x64_bin.exe) 
+   - [jdk 최신 버전 다운로드](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 
    - 설치 기본 경로: C:\Program Files\Java\jdk-13.0.1\
 1. "환경 변수 > 시스템 변수"을 추가한다.
    - JAVA_HOME: C:\Program Files\Java\jdk-13.0.1
