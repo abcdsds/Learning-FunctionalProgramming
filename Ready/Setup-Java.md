@@ -1,3 +1,4 @@
+## 개발 환경 구성하기
 1. JDK 최신 버전을 설치한다.
    - [jdk 최신 버전 다운로드](https://www.oracle.com/technetwork/java/javase/downloads/index.html) 
    - 설치 기본 경로: C:\Program Files\Java\jdk-13.0.1\
@@ -20,10 +21,8 @@
    Java(TM) SE Runtime Environment (build 13.0.1+9)
    Java HotSpot(TM) 64-Bit Server VM (build 13.0.1+9, mixed mode, sharing)
    ```
-
 1. Visual Studio Code을 설치한다.   
    - https://code.visualstudio.com/
-
 1. Visual Studio Code 확장 도구를 설치한다(단축키: Ctrl + Shift + X).
    - Java Extention Pack
      - Java Dependensy Viewer
@@ -39,25 +38,32 @@
        "java.home": "C:/Program Files/Java/jdk-13.0.1"
    }
    ```
- 1. Maven 프로젝트를 만든다.
+## Maven hello 프로젝트 만들기
+1. Palette로 프로젝트 만들기
    - Ctrl + Shift + P
-     -> Maven: Create Maven Project  
-     -> maven-archetype-quickstart  
-     -> 1.4  
-     -> 프로젝트를 생성할 상위 폴더을 선택한다.  
-     -> (Maven 시작)  
-     -> groupId 입력 요구에 "hello"을 입력한다.  
-     -> artifactId 입력 요구에 "hello"을 입력한다.  
-     -> version' 1.0-SNAPSHOT와 package 입력 요구는 Enter로 기본값을 사용한다.  
-     -> (Maven 완료)
+      -> Maven: Create Maven Project  
+      -> maven-archetype-quickstart  
+      -> 1.4  
+      -> 프로젝트를 생성할 상위 폴더을 선택한다.  
+      -> (Maven 시작)  
+      -> groupId 입력 요구에 "hello"을 입력한다.  
+      -> artifactId 입력 요구에 "hello"을 입력한다.  
+      -> version' 1.0-SNAPSHOT와 package 입력 요구는 Enter로 기본값을 사용한다.  
+      -> (Maven 완료)  
    - "./src/main/java/hello/App.java" 파일을 연다.
    - 실행하기
-     - Visual Studio Code: F5 또는 Ctrl + F5
-     - 콘솔: java -cp .\target\classes hello.App
-     - Maven
-       - mvn install
-       - java -cp .\target\hello-1.jar hello.App
-   
+      - Visual Studio Code: F5 또는 Ctrl + F5
+      - 콘솔: java -cp .\target\classes hello.App
+      - Maven
+        - mvn install
+        - java -cp .\target\hello-1.jar hello.App
+1. Cmd로 프로젝트 만들기  
+ 
+## 추가 라이브러리 만들기
+- https://www.sysnet.pe.kr/Default.aspx?mode=2&sub=0&detail=1&pageno=0&wid=11980&rssMode=1&wtype=0
+- https://mygumi.tistory.com/255
+- http://i5on9i.blogspot.com/2018/07/vscode-maven-project.html
+- launch.json과 tasks.json 파일 이해하기
 
 ## Reference URLs
 - [Visual Studio Code 에 Java 개발 환경 만들기](https://soolper.tistory.com/6)
