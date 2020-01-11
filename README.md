@@ -9,6 +9,7 @@ MORE FUN with Functional Programming
 1. [오브젝트](https://github.com/hhko/Learning-FunctionalProgramming/blob/master/Books/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8/README.md)
 
 ## TODO   
+1. BOOK - [실전 코드로 배우는 실용주의 디자인 패턴](http://www.yes24.com/Product/goods/34572809)
 1. BOOK - [Functional C#](http://www.yes24.com/Product/Goods/69669484?scode=032&OzSrank=20)
 1. BOOK - [함수형 사고](http://www.yes24.com/24/UsedShop/Goods/29029252?scode=048_002)
 1. BOOK - [Functional Programming in C++](http://www.yes24.com/Product/Goods/77275593?scode=032&OzSrank=16)
