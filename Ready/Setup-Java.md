@@ -157,3 +157,7 @@
 - [Visual Studio Code 에 Java 개발 환경 만들기](https://soolper.tistory.com/6)
 - [Visual Studio Code 에서의 Java 한글 인코딩 문제](https://soolper.tistory.com/7?category=768175)
 - [Visual Studio Code의 Java 확장을 이용한 간단한 프로젝트 구축](https://www.sysnet.pe.kr/Default.aspx?mode=2&sub=0&detail=1&pageno=0&wid=11980&rssMode=1&wtype=0)
+
+## TODO
+1. hello 예제 작성하여 추가하기
+1. 의존성 예제 작성하여 추가하기
