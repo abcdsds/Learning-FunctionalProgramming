@@ -1,1 +1,0 @@
-- ["오브젝트" 예제코드 다운로드](https://github.com/eternity-oop/objects/archive/master.zip)
