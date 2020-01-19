@@ -10,7 +10,10 @@ graph TD
   C -->|Three| F[fa:fa-car Car]
 ```
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hhko/Learning-FunctionalProgramming/master/uml/instance.puml)
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hhko/learning-functionalprogramming/master/UML/Instance.puml)
+
+- 폴더와 파일명은 대소문자를 구분한다.
+- 계정과 레파지토리는 소문자이다.
 
 raw.githubusercontent.com/username/repo-name/branch-name/path
 raw.githubusercontent.com/hhko/Learning-FunctionalProgramming/master/uml/instance.puml
