@@ -24,4 +24,5 @@
 - ["오브젝트" Github 홈페이지](https://github.com/eternity-oop/object)
 
 ## 목차
-
+- [x] [Chapter 00. 패러다임](./Chapter-00)
+- [ ] [Chapter 01. 객체](./Chapter-01)
