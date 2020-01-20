@@ -1,22 +1,10 @@
 # Learning Functional Programming
-- 더 재미있게 개발하기 위해 함수형 패러다임을 이해하기
-
-```mermaid
-graph TD
-  A[Christmas] -->|Get money| B(Go shopping)
-  B --> C{Let me think}
-  C -->|One| D[Laptop]
-  C -->|Two| E[iPhone]
-  C -->|Three| F[fa:fa-car Car]
-```
+- 더 재미있게 개발하기 위해 함수형 패러다임 이해하기
 
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hhko/learning-functionalprogramming/master/UML/Instance.puml)
 
 - 폴더와 파일명은 대소문자를 구분한다.
 - 계정과 레파지토리는 소문자이다.
-
-raw.githubusercontent.com/username/repo-name/branch-name/path
-raw.githubusercontent.com/hhko/Learning-FunctionalProgramming/master/uml/instance.puml
 
 ## Ready
 1. [Java 개발 환경 구축하기](https://github.com/hhko/Learning-FunctionalProgramming/blob/master/Ready/Setup-Java.md)
