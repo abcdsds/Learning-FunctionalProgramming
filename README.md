@@ -10,8 +10,8 @@
 1. [Java 개발 환경 구축하기](https://github.com/hhko/Learning-FunctionalProgramming/blob/master/Ready/Setup-Java.md)
 
 ## BOOKs - DOING
-1. [코틀린으로 배우는 함수형 프로그래밍(조재용님, 우명인님)](https://github.com/hhko/Learning-FunctionalProgramming/tree/master/Books/01.%20%EC%BD%94%ED%8B%80%EB%A6%B0%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
-1. [오브젝트(조영호님)](https://github.com/hhko/Learning-FunctionalProgramming/tree/master/Books/02-Object)
+1. [코틀린으로 배우는 함수형 프로그래밍(조재용님, 우명인님)](./01-LearnFunctionalProgrammingWithKotlin)
+1. [오브젝트(조영호님)](./Books/02-Object)
 
 ## TODO   
 1. BOOK - [실전 코드로 배우는 실용주의 디자인 패턴](http://www.yes24.com/Product/goods/34572809)
