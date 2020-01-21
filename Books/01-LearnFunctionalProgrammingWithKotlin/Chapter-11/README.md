@@ -18,7 +18,7 @@
    - 입력 타입을 더 명확히 정의한다.
      - 예. NonZeroInt 
    - 출력 타입을 더 명확히 정의한다.
-     - 예. Option<int> 
-     - 예. Either<Exception, int>
-     - 예. Try<int>
+     - 예. ```Option<int>``` 
+     - 예. ```Either<Exception, int>```
+     - 예. ```Try<int>```
   
