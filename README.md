@@ -1,12 +1,12 @@
 # Learning Functional Programming
-- 더 재미있게 개발하기 위해 함수형 패러다임 이해하기
+- 설레임이 있는 개발을 위해 배우고 익혀 실천하자. 
 
 ## Ready
 1. [Java 개발 환경 구축하기](https://github.com/hhko/Learning-FunctionalProgramming/blob/master/Ready/Setup-Java.md)
 
-## BOOKs - DOING
-1. [코틀린으로 배우는 함수형 프로그래밍(조재용님, 우명인님)](./Books/01-LearnFunctionalProgrammingWithKotlin)
-1. [오브젝트(조영호님)](./Books/02-Object)
+## DOING
+1. BOOK - [코틀린으로 배우는 함수형 프로그래밍(조재용님, 우명인님)](./Books/01-LearnFunctionalProgrammingWithKotlin)
+1. BOOK - [오브젝트(조영호님)](./Books/02-Object)
 
 ## TODO   
 1. BOOK - [실전 코드로 배우는 실용주의 디자인 패턴](http://www.yes24.com/Product/goods/34572809)
