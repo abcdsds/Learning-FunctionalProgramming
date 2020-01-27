@@ -37,6 +37,7 @@
 1. BLOG - [Dimitris Papadimitriou - Advance Functors in C#. Beyond lists](https://medium.com/@dimpapadim3/advance-functors-and-design-patterns-with-c-fba9c9cae0f9)
 1. BLOG - [Dimitris Papadimitriou - Introduction to Functors in C#](https://medium.com/@dimpapadim3/introduction-to-functors-in-c-1e6b434c85ae)
 1. BLOG - [Dimitris Papadimitriou - Monads for object oriented programming with C#](https://medium.com/@dimpapadim3/monads-in-oop-with-c-a4ec11f1f9d9)
+1. BLOG - [Functional Programming Glossary](http://degoes.net/articles/fp-glossary)
 1. EDU - [컴퓨터과학이 여는 세계](https://www.youtube.com/watch?v=HTWSPoDLmHI&list=PL0Nf1KJu6Ui7yoc9RQ2TiiYL9Z0MKoggH)
 1. EDU - [Functional Programming with C#](https://www.pluralsight.com/courses/functional-programming-csharp)
 1. EDU - [Applying Functional Principles in C#](https://www.pluralsight.com/courses/csharp-applying-functional-principles)
