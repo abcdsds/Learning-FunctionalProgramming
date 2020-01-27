@@ -1,5 +1,5 @@
 # Learning Functional Programming
-- 설레임이 있는 개발을 위해 배우고 익혀 실천하자. 
+- 설레임이 있는 개발을 위해. 
 
 ## Ready
 1. [Java 개발 환경 구축하기](https://github.com/hhko/Learning-FunctionalProgramming/blob/master/Ready/Setup-Java.md)
