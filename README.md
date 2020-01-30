@@ -1,12 +1,15 @@
 # Learning Functional Programming
 - 설레임이 있는 개발을 위해. 
 
-## Ready
+## 개발 환경 구성
 1. [Java 개발 환경 구축하기](https://github.com/hhko/Learning-FunctionalProgramming/blob/master/Ready/Setup-Java.md)
+
+## [용어집](./Glossaries)
 
 ## DOING
 1. BOOK - [코틀린으로 배우는 함수형 프로그래밍(조재용님, 우명인님)](./Books/01-LearnFunctionalProgrammingWithKotlin)
 1. BOOK - [오브젝트(조영호님)](./Books/02-Object)
+1. EDU - [Making Your C# Code More Functional](https://www.pluralsight.com/courses/making-functional-csharp)
 
 ## TODO   
 1. BOOK - [실전 코드로 배우는 실용주의 디자인 패턴](http://www.yes24.com/Product/goods/34572809)
@@ -42,7 +45,6 @@
 1. EDU - [Functional Programming with C#](https://www.pluralsight.com/courses/functional-programming-csharp)
 1. EDU - [Applying Functional Principles in C#](https://www.pluralsight.com/courses/csharp-applying-functional-principles)
 1. EDU - [Writing Purely Functional Code in C#](https://www.pluralsight.com/courses/writing-purely-functional-code-csharp)
-1. EDU - [Making Your C# Code More Functional](https://www.pluralsight.com/courses/making-functional-csharp)
 1. SRC - [CSharpFunctionalExtensions](https://github.com/vkhorikov/CSharpFunctionalExtensions)
 1. SRC - [Category Theory for DotNET Programmers](https://github.com/cboudereau/category-theory-for-dotnet-programmers)
 1. SRC - [LanguageExt](https://github.com/louthy/language-ext)
