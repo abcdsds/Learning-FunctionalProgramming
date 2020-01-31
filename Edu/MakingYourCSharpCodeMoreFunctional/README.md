@@ -24,6 +24,11 @@
      ```
 
    - 프로젝트 단위로 PlantUML 파일 만들기
+   
+     ```shell
+     puml-gen 입력경로 출력경로 -dir -excludePaths bin,obj
+     puml-gen .\01 .\01\UMLs -dir -excludePaths bin,obj
+     ```
 
 2. PlantUML
    - [PlantUML](https://github.com/qjebbs/vscode-plantuml) 설치
