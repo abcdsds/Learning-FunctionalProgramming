@@ -1,0 +1,12 @@
+@startuml
+class Month <<sealed>> {
+    - Value : DateTime <<get>>
+    + Month(year:int, month:int)
+    + CompareTo(other:DateTime) : int
+    + <<override>> Equals(obj:object) : bool
+    + Equals(other:Month) : bool
+    + <<override>> GetHashCode() : int
+}
+"IEquatable`1" "<Month>" <|-- Month
+"IComparable`1" "<DateTime>" <|-- Month
+@enduml

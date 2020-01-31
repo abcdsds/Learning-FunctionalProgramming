@@ -1,0 +1,12 @@
+@startuml
+!include .\\BankCard.puml
+!include .\\Cash.puml
+!include .\\Currency.puml
+!include .\\Date.puml
+!include .\\FixedMoney.puml
+!include .\\GiftCard.puml
+!include .\\Money.puml
+!include .\\Month.puml
+!include .\\Program.puml
+!include .\\Wallet.puml
+@enduml

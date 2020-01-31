@@ -1,0 +1,13 @@
+@startuml
+class Currency <<sealed>> {
+    + Symbol : string <<get>>
+    + Currency(symbol:string)
+    + {static} USD : Currency <<get>>
+    + {static} EUR : Currency <<get>>
+    + {static} JPY : Currency <<get>>
+    + <<override>> Equals(obj:object) : bool
+    + Equals(other:Currency) : bool
+    + <<override>> GetHashCode() : int
+}
+"IEquatable`1" "<Currency>" <|-- Currency
+@enduml

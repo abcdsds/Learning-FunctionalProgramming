@@ -1,0 +1,12 @@
+@startuml
+class Date <<sealed>> {
+    - Value : DateTime <<get>>
+    + Date(year:int, month:int, day:int)
+    + CompareTo(other:DateTime) : int
+    + <<override>> Equals(obj:object) : bool
+    + Equals(other:Date) : bool
+    + <<override>> GetHashCode() : int
+}
+"IEquatable`1" "<Date>" <|-- Date
+"IComparable`1" "<DateTime>" <|-- Date
+@enduml
