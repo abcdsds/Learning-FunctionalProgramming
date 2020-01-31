@@ -26,8 +26,8 @@
    - 프로젝트 단위로 PlantUML 파일 만들기
    
      ```shell
-     puml-gen 입력경로 출력경로 -dir -excludePaths bin,obj
-     puml-gen .\01 .\01\UMLs -dir -excludePaths bin,obj
+     puml-gen 입력경로 출력경로 -dir -excludePaths bin,obj -allInOne
+     puml-gen .\01 .\01\UMLs -dir -excludePaths bin,obj -allInOne
      ```
 
 2. PlantUML
