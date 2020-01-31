@@ -8,7 +8,7 @@
 1. [용어집](./Glossaries)
 1. BOOK - [코틀린으로 배우는 함수형 프로그래밍(조재용님, 우명인님)](./Books/01-LearnFunctionalProgrammingWithKotlin)
 1. BOOK - [오브젝트(조영호님)](./Books/02-Object)
-1. EDU - [Making Your C# Code More Functional](https://www.pluralsight.com/courses/making-functional-csharp)
+1. EDU - [Making Your C# Code More Functional](./Edu/MakingYourCSharpCodeMoreFunctional)
 
 ## TODO   
 1. BOOK - [실전 코드로 배우는 실용주의 디자인 패턴](http://www.yes24.com/Product/goods/34572809)
