@@ -1,3 +1,6 @@
+# 용어집
+
+1. 일급 시민(Frist-class citizen)
 1. 순수 함수(Prue Function)
    - Receives a function, returns a function or both
 1. 부수 효과(Side Effects)
