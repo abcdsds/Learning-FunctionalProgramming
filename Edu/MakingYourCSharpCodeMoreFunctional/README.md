@@ -1,6 +1,12 @@
 # More Functional
 
-## VS Code 확장 도구 설치
+## 1. 목차
+
+1. [Challenging The Object-Oriented Mindset](./01)
+
+<br/>
+
+## 2. VS Code 확장 도구 설치
 
 ### C# 언어
 

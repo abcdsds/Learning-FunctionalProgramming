@@ -7,27 +7,6 @@ class BankCard {
 Money <|-- BankCard
 class Cash {
 }
-class Currency <<sealed>> {
-    + Symbol : string <<get>>
-    + Currency(symbol:string)
-    + {static} USD : Currency <<get>>
-    + {static} EUR : Currency <<get>>
-    + {static} JPY : Currency <<get>>
-    + <<override>> Equals(obj:object) : bool
-    + Equals(other:Currency) : bool
-    + <<override>> GetHashCode() : int
-}
-"IEquatable`1" "<Currency>" <|-- Currency
-class Date <<sealed>> {
-    - Value : DateTime <<get>>
-    + Date(year:int, month:int, day:int)
-    + CompareTo(other:DateTime) : int
-    + <<override>> Equals(obj:object) : bool
-    + Equals(other:Date) : bool
-    + <<override>> GetHashCode() : int
-}
-"IEquatable`1" "<Date>" <|-- Date
-"IComparable`1" "<DateTime>" <|-- Date
 class FixedMoney {
     + Currency : Currency <<get>>
     + Amount : decimal <<get>>
@@ -43,19 +22,6 @@ class GiftCard {
 FixedMoney <|-- GiftCard
 abstract class Money {
     + {abstract} Withdraw(currency:Currency, amount:decimal) : decimal
-}
-class Month <<sealed>> {
-    - Value : DateTime <<get>>
-    + Month(year:int, month:int)
-    + CompareTo(other:DateTime) : int
-    + <<override>> Equals(obj:object) : bool
-    + Equals(other:Month) : bool
-    + <<override>> GetHashCode() : int
-}
-"IEquatable`1" "<Month>" <|-- Month
-"IComparable`1" "<DateTime>" <|-- Month
-class Program {
-    {static} Main(args:string[]) : void
 }
 class Wallet {
 }

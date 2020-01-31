@@ -1,10 +1,12 @@
 # 코틀린으로 배우는 함수형 프로그래밍
+
 **읽기: 2019년 12월 26일(목) ~ 2019년 12월 31일(화)**  
 [![코틀린으로 배우는 함수형 프로그래밍](http://image.kyobobook.co.kr/images/book/large/557/l9788966262557.jpg)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788966262557&orderClick=LEa&Kc=)
 
 <br/>
 
 ## 목차
+
 - [x] [Chapter 01. 함수형 프로그래밍이란?](./Chapter-01)
 - [ ] Chapter 02. 코틀린으로 함수형 프로그래밍 시작하기
 - [ ] Chapter 03. 재귀
