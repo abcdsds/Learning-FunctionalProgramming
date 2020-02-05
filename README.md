@@ -12,12 +12,16 @@
 1. Dependency Injection revisited
    - [Dependency Injection revisited - Youtube 2018-05-29](https://www.youtube.com/watch?v=4hvIwRHylj0)
    - [Dependency Injection revisited - Youtube 2018-08-06](https://www.youtube.com/watch?v=qBYVW4ghMi8)
+   - [From Dependency injection to dependency rejection - Youtube 2017-04-18](https://www.youtube.com/watch?v=cxs7oLGrxQ4)
+   - [Async injection - Youtube 2019-03-29](https://www.youtube.com/watch?v=BsavoQWAVqM)
    - [Dependency Injection revisited - BLOG](https://blog.ploeh.dk/2018/07/24/dependency-injection-revisited/)
    - [Flattening arrow code using a stack of monads - BLOG](https://blog.ploeh.dk/2018/07/30/flattening-arrow-code-using-a-stack-of-monads/)
    - [Dependency Injection revisited - GitHub](https://github.com/ploeh/dependency-injection-revisited)
    - [Asynchronous Injection - GitHub](https://github.com/ploeh/asynchronous-injection)
    - [Visitor as a sum type - BLOG](https://blog.ploeh.dk/2018/06/25/visitor-as-a-sum-type/)
    - [How language features affect OO design - BLOG](https://medium.com/ingeniouslysimple/how-language-features-affect-oo-design-237cfc850752)
+   - [Union Types in C# - BLOG](http://boustrophedonic.com/blog/2012/10/21/union-types-in-csharp/)
+   - [Functional approaches to dependency injection](https://fsharpforfunandprofit.com/posts/dependency-injection-1/)
    - [Learning Dependency Injection WPF - GitHub](https://github.com/jeremybytes/learning-dependency-injection)
 
 ## TODO   
