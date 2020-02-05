@@ -1,11 +1,14 @@
 using System;
 
-namespace ChallengingTheObjectOrientedMindset {
-    public class FixedMoney : Money {
+namespace ChallengingTheObjectOrientedMindset 
+{
+    public class FixedMoney : Money 
+    {
         public Currency Currency { get; }
         public decimal Amount { get; private set; }
 
-        protected FixedMoney (Currency currency, decimal amount) {
+        protected FixedMoney (Currency currency, decimal amount) 
+        {
             if (currency == null)
                 throw new ArgumentNullException (nameof (currency));
 
@@ -16,7 +19,8 @@ namespace ChallengingTheObjectOrientedMindset {
             Amount = amount;
         }
 
-        public override decimal Withdraw (Currency currency, decimal amount) {
+        public override decimal Withdraw (Currency currency, decimal amount) 
+        {
             if (currency != Currency)
                 return 0;
 

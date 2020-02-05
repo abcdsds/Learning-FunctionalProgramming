@@ -1,11 +1,14 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace ChallengingTheObjectOrientedMindset {
-    public sealed class Currency : IEquatable<Currency> {
+namespace ChallengingTheObjectOrientedMindset 
+{
+    public sealed class Currency : IEquatable<Currency> 
+    {
         public string Symbol { get; }
 
-        public Currency (string symbol) {
+        public Currency (string symbol) 
+        {
             Symbol = symbol;
         }
 
@@ -13,7 +16,8 @@ namespace ChallengingTheObjectOrientedMindset {
         public static Currency EUR => new Currency ("EUR");
         public static Currency JPY => new Currency ("JPY");
 
-        public override bool Equals (object obj) {
+        public override bool Equals (object obj) 
+        {
             if (ReferenceEquals (null, obj))
                 return false;
 
@@ -26,7 +30,8 @@ namespace ChallengingTheObjectOrientedMindset {
             return Equals ((Currency) obj);
         }
 
-        public bool Equals ([AllowNull] Currency other) {
+        public bool Equals ([AllowNull] Currency other) 
+        {
             if (ReferenceEquals (null, other))
                 return false;
 
@@ -42,10 +47,10 @@ namespace ChallengingTheObjectOrientedMindset {
             0;
 
         public static bool operator == (Currency a, Currency b) =>
-        (ReferenceEquals (a, null) && ReferenceEquals (b, null)) ||
-        (!ReferenceEquals (a, null) && a.Equals (b));
+            (ReferenceEquals (a, null) && ReferenceEquals (b, null)) ||
+            (!ReferenceEquals (a, null) && a.Equals (b));
 
         public static bool operator != (Currency a, Currency b) =>
-        !(a == b);
+            !(a == b);
     }
 }

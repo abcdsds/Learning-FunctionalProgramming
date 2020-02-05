@@ -1,4 +1,5 @@
-namespace ChallengingTheObjectOrientedMindset {
+namespace ChallengingTheObjectOrientedMindset 
+{
     public class Cash //: FixedMoney
     {
 

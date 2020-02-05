@@ -1,18 +1,22 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace ChallengingTheObjectOrientedMindset {
-    public sealed class Date : IEquatable<Date>, IComparable<DateTime> {
+namespace ChallengingTheObjectOrientedMindset 
+{
+    public sealed class Date : IEquatable<Date>, IComparable<DateTime> 
+    {
         private DateTime Value { get; }
 
-        public Date (int year, int month, int day) {
+        public Date (int year, int month, int day) 
+        {
             Value = new DateTime (year, month, day);
         }
 
         public int CompareTo ([AllowNull] DateTime other) =>
-        Value.CompareTo (other);
+            Value.CompareTo (other);
 
-        public override bool Equals (object obj) {
+        public override bool Equals (object obj) 
+        {
             if (ReferenceEquals (null, obj))
                 return false;
 
@@ -25,7 +29,8 @@ namespace ChallengingTheObjectOrientedMindset {
             return Equals ((Date) obj);
         }
 
-        public bool Equals ([AllowNull] Date other) {
+        public bool Equals ([AllowNull] Date other) 
+        {
             if (ReferenceEquals (null, other))
                 return false;
 
@@ -36,13 +41,13 @@ namespace ChallengingTheObjectOrientedMindset {
         }
 
         public override int GetHashCode () =>
-        Value.GetHashCode ();
+            Value.GetHashCode ();
 
         public static bool operator == (Date a, Date b) =>
-        (ReferenceEquals (a, null) && ReferenceEquals (b, null)) ||
-        (!ReferenceEquals (a, null) && a.Equals (b));
+            (ReferenceEquals (a, null) && ReferenceEquals (b, null)) ||
+            (!ReferenceEquals (a, null) && a.Equals (b));
 
         public static bool operator != (Date a, Date b) =>
-        !(a == b);
+            !(a == b);
     }
 }
