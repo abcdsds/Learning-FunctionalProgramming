@@ -10,14 +10,15 @@
 1. BOOK - [오브젝트(조영호님)](./Books/02-Object)
 1. EDU - [Making Your C# Code More Functional](./Edu/MakingYourCSharpCodeMoreFunctional)
 1. Dependency Injection revisited
-   - [Dependency Injection revisited - Youtube 2018-05-29](https://www.youtube.com/watch?v=4hvIwRHylj0), [Dependency Injection revisited - Youtube 2018-08-06](https://www.youtube.com/watch?v=qBYVW4ghMi8)
+   - [Dependency Injection revisited - Youtube 2018-05-29](https://www.youtube.com/watch?v=4hvIwRHylj0)
+   - [Dependency Injection revisited - Youtube 2018-08-06](https://www.youtube.com/watch?v=qBYVW4ghMi8)
    - [Dependency Injection revisited - BLOG](https://blog.ploeh.dk/2018/07/24/dependency-injection-revisited/)
-   - [Flattening arrow code using a stack of monads](https://blog.ploeh.dk/2018/07/30/flattening-arrow-code-using-a-stack-of-monads/)
+   - [Flattening arrow code using a stack of monads - BLOG](https://blog.ploeh.dk/2018/07/30/flattening-arrow-code-using-a-stack-of-monads/)
    - [Dependency Injection revisited - GitHub](https://github.com/ploeh/dependency-injection-revisited)
    - [Asynchronous Injection - GitHub](https://github.com/ploeh/asynchronous-injection)
    - [Visitor as a sum type - BLOG](https://blog.ploeh.dk/2018/06/25/visitor-as-a-sum-type/)
    - [How language features affect OO design - BLOG](https://medium.com/ingeniouslysimple/how-language-features-affect-oo-design-237cfc850752)
-   - [learning-dependency-injection - GitHub](https://github.com/jeremybytes/learning-dependency-injection)
+   - [Learning Dependency Injection WPF - GitHub](https://github.com/jeremybytes/learning-dependency-injection)
 
 ## TODO   
 1. BOOK - [실전 코드로 배우는 실용주의 디자인 패턴](http://www.yes24.com/Product/goods/34572809)
