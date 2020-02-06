@@ -1,0 +1,52 @@
+{
+   //
+   // launch.json 파일은 VSCode "Debug and Run" 운영을 위한 설정 파일이다.
+   // 
+
+   // Use IntelliSense to find out which attributes exist for C# debugging
+   // Use hover for the description of the existing attributes
+   // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+   "version": "0.2.0",
+   "configurations": [
+        {
+            "name": "CreatingConsistentObject",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+
+            //
+            // "${workspaceFolder}"는 솔루션 파일이 있는 경로다.
+            //
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/CreatingConsistentObject/bin/Debug/netcoreapp3.1/CreatingConsistentObject.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/CreatingConsistentObject",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "CreatingConsistentObject-Completed",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+
+            //
+            // "${workspaceFolder}"는 솔루션 파일이 있는 경로다.
+            //
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/CreatingConsistentObject-Completed/bin/Debug/netcoreapp3.1/CreatingConsistentObject-Completed.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/CreatingConsistentObject-Completed",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}

@@ -2,9 +2,11 @@
 - 설레임이 있는 개발을 위해. 
 
 ## 개발 환경 구성
-1. [Java 개발 환경 구축하기](https://github.com/hhko/Learning-FunctionalProgramming/blob/master/Ready/Setup-Java.md)
+1. [Java 개발 환경 구축하기](./Environment/Setup-Java.md)
+1. [Visual Studio Code C# 개발 환경 구축하기](./Environment/Setup-CSharp.md)
 
 ## DOING
+1. [정직한 설계](./HonestDesign-for-CSharp/)
 1. [용어집](./Glossaries)
 1. BOOK - [코틀린으로 배우는 함수형 프로그래밍(조재용님, 우명인님)](./Books/01-LearnFunctionalProgrammingWithKotlin)
 1. BOOK - [오브젝트(조영호님)](./Books/02-Object)
