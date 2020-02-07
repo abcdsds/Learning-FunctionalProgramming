@@ -4,7 +4,7 @@
 
 using System;
 
-namespace CreatingConsistentObject_2
+namespace CreatingConsistentObject_Problem2
 {
     public class Student
     {

@@ -1,5 +1,12 @@
 # Visual Studio Code
 
+## 단축키
+
+- 참조 자료: https://code.visualstudio.com/docs/editor/codebasics
+- Ctrl + Shift + P : Command Palette
+- Ctrl + Shift + Alt + 방향키/페이지키 : Column Selection
+- Shift + Alt + 마우스 : Column Box Selection
+
 ## VSCode Settings
 
 1. 폴더 제외 시키기
@@ -25,8 +32,61 @@
 
 ### C# 언어
 
+#### 사용 중
+
 1. Auto-Using for C#
+   - using 구문을 자동 생성해 준다.
+1. C# Extensions
+   - 인터페이스와, 클래스 기본 코드를 자동 생성해 준다.
+1. Awesome DotNetCore Pack
+   - C# and DotNetCore
+     - [x] C# for Visual Studio Code (powered by OmniSharp)
+     - [x] C# Extensions
+     - [ ] C# Snippets
+     - [ ] Super Sharp (C# extensions)
+     - [ ] Paste JSON as Code
+     - [ ] Dotnet Core Essentials
+     - [ ] Essential ASP.NET Core Snippets
+   - Code formatting and comments
+     - [ ] EditorConfig
+     - [ ] XML Documentation Comments Support for Visual Studio Code
+   - Dev Tools
+     - [ ] IL Viewer for Visual Studio Code
+     - [ ] .NET Core Test Explorer
+     - [ ] GitLens
+     - [ ] Path Intellisense
+     - [ ] Todo Tree
+     - [ ] Todo+
+     - [ ] Copy text
+1. Icons
+   - [x] Studio Icons
+
+TODO: XYZ
+ - X
+ - Y
+DONE: XYZ2
+ - X1
+ - X2
+
+
+#### 검토 대상
+
 1. C# FixFormat??
+1. C# Namespace Autocompletion??
+1. C# Model to Builder??
+1. 코드 분석관련 Roslynator
+   - TODO: Nullable 결과를 Editor에서 확인할 수 있는 것 찾기
+1. 솔루션 관리
+   - .NET Core Tools
+     - Build, Run, Execute Context 메뉴을 제공한다.
+   - vscode-solution-explorer
+     - 메뉴 사용성이 어색하다.
+1. Dotnet core commands, dotnet
+   - dotnet Command 명령어을 Palette에서 처리한다.
+1. .NET Core Add Reference
+   - 프로젝트 참조를 .csproj 파일의 Context 메뉴로 제공한다.  
+1. C# Snippet 생성 및 관리 관련??
+1. 단위 테스트 관련??
 
 ### Markdown
 

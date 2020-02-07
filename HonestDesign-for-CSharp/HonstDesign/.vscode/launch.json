@@ -26,23 +26,6 @@
             "stopAtEntry": false
         },
         {
-            "name": "CreatingConsistentObject-Completed",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-
-            //
-            // "${workspaceFolder}"는 솔루션 파일이 있는 경로다.
-            //
-            // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/CreatingConsistentObject-Completed/bin/Debug/netcoreapp3.1/CreatingConsistentObject-Completed.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/CreatingConsistentObject-Completed",
-            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
-            "console": "internalConsole",
-            "stopAtEntry": false
-        },
-        {
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach",

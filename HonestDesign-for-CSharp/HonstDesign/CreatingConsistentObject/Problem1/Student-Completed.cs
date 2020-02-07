@@ -1,5 +1,6 @@
 using System;
-namespace CreatingConsistentObject
+
+namespace CreatingConsistentObject_Problem1_Completed
 {
     public class Student
     {
@@ -7,6 +8,7 @@ namespace CreatingConsistentObject
 
         public Student(string name)
         {
+            // 문제1: 예외를 발생시킨다.
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException(nameof(name));
 
