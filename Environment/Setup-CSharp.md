@@ -38,6 +38,8 @@
    - using 구문을 자동 생성해 준다.
 1. C# Extensions
    - 인터페이스와, 클래스 기본 코드를 자동 생성해 준다.
+1. .NET Core Extension Pack  
+   - https://marketplace.visualstudio.com/items?itemName=doggy8088.netcore-extension-pack
 1. Awesome DotNetCore Pack
    - C# and DotNetCore
      - [x] C# for Visual Studio Code (powered by OmniSharp)
@@ -56,8 +58,20 @@
      - [ ] GitLens
      - [ ] Path Intellisense
      - [ ] Todo Tree
-     - [ ] Todo+
      - [ ] Copy text
+1. Dev Tools
+   - [ ] Output Colorizer
+   - [ ] Todo+
+   - [ ] VS Live Share
+   - [ ] GitLab Workflow
+   - [ ] Remote – Containers
+   - [ ] Path Intellisence
+   - [ ] Visual Studio IntelliCode
+   - [ ] GitHub Extension
+   - [ ] Docker
+   - [ ] Code Spell Checker
+   - [ ] Markdown PDF
+   - [ ] Color Picker
 1. Icons
    - [x] Studio Icons
 
