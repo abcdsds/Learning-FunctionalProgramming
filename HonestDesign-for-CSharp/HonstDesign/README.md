@@ -5,6 +5,7 @@
 - [Advanced Defensive Programming Techniques](https://app.pluralsight.com/library/courses/advanced-defensive-programming-techniques)
 - [Tactical Design Patterns in .NET: Creating Objects](https://app.pluralsight.com/library/courses/tactical-design-patternsdot-net)
 - [Specification Pattern in C#](https://app.pluralsight.com/library/courses/csharp-specification-pattern)
+- [C# Extension Methods](https://app.pluralsight.com/library/courses/c-sharp-extension-methods)
 
 ## 주요 키워드
 
@@ -18,6 +19,10 @@
 - Builder
 - Fluent Builder
 - Specification
+
+## NuGet
+
+- [LanguageExt](https://github.com/louthy/language-ext)
 
 ## 목차
 

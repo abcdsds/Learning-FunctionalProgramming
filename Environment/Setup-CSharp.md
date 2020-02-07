@@ -75,14 +75,6 @@
 1. Icons
    - [x] Studio Icons
 
-TODO: XYZ
- - X
- - Y
-DONE: XYZ2
- - X1
- - X2
-
-
 #### 검토 대상
 
 1. C# FixFormat??
