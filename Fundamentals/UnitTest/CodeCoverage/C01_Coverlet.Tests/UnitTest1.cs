@@ -73,6 +73,83 @@ using FluentAssertions;
 //      [ExcludeFromCodeCoverage]
 // dotnet-reportgenerator-globaltool
 // dotnet tool install --global dotnet-reportgenerator-globaltool   
+// dotnet tool list --global
+//
+
+// dotnet add package coverlet.msbuild
+// dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=OpenCover
+// dotnet tool install --global dotnet-reportgenerator-globaltool   
+// reportgenerator "-reports:coverage.opencover.xml" "-targetdir:./report"
+//  ./report/
+// TODO NuGet dotnet-reportgenerator-globaltool??
+// TODO GitHub
+
+
+//=====================================
+// Coverlet 정리
+// https://github.com/tonerdo/coverlet
+//=====================================
+// 1. VSTest
+//      https://github.com/tonerdo/coverlet/blob/master/Documentation/VSTestIntegration.md
+//      dotnet add package coverlet.collector
+//      dotnet test --collect:"XPlat Code Coverage"
+//          ./TestResults/coverage.cobertura.xml
+//      요구사항
+//          .NET Core SDK v2.2.401
+//          Microsoft.NET.Test.Sdk 16.5.0 
+// 2. MSBuild
+//      https://github.com/tonerdo/coverlet/blob/master/Documentation/MSBuildIntegration.md
+//      dotnet add package coverlet.msbuild
+//      dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=OpenCover
+//          ./coverage.json               <- /p:CollectCoverage=true
+//          ./coverage.opencover.xml      <- /p:CoverletOutputFormat=OpenCover
+//      dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info
+//      요구사항
+//           .NET Standard 2.0
+// 3. .NET Core Global Tool
+//      https://github.com/tonerdo/coverlet/blob/master/Documentation/GlobalTool.md
+//      dotnet tool install --global coverlet.console
+//      coverlet /path/to/test-assembly.dll --target "dotnet" --targetargs "test /path/to/test-project --no-build"
+//              ex. coverlet .\bin\Debug\netcoreapp3.1\C01_Coverlet.Tests.dll --target "dotnet" --targetargs "test . --no-build"
+//          ./coverage.json               <- /p:CollectCoverage=true
+//      요구사항
+//          .NET Core 2.2
+
+// Coverage Gutters
+// https://xpirit.com/netcore-withvscode-should-haveunit-tests/
+// lcov.info
+// coverage-gutters.showGutterCoverage
+// coverage-gutters.showLineCoverage
+// Ctrl+Shift+8/9
+
+// DONE Blog - https://www.youtube.com/watch?v=vdAyb4W8gp4
+// TODO Blog - https://gunnarpeipman.com/aspnet-core-code-coverage/
+// TODO Blog - https://www.dotnetcurry.com/visualstudio/1451/dotnet-core-development-vs-code
+// TODO Blog - https://xpirit.com/netcore-withvscode-should-haveunit-tests/
+// TODO Blog - https://dev.to/deinsoftware/net-core-unit-test-and-code-coverage-with-visual-studio-code-37bp
+// TODO Blog - https://www.hanselman.com/blog/AutomaticUnitTestingInNETCorePlusCodeCoverageInVisualStudioCode.aspx
+// TODO Blog - https://www.codeproject.com/Articles/1266146/Code-Coverage-is-Finally-Easy-in-NET-Core
+// TODO Blog - https://tattoocoder.com/cross-platform-code-coverage-arrives-for-net-core/
+// TODO Blog - https://channel9.msdn.com/Shows/On-NET/Reducing-Bugs-In-Your-Code-with-Coverlet
+// TODO Blog - https://dotnetsharing.wordpress.com/2019/03/12/code-coverage-in-net-core-apps/
+// TODO Blog - https://geeks.ms/jlguerrero/en/2019/01/13/code-analysis-and-code-coverage-using-netcore-vs-code-publishing-to-sonarqube-sonarcloud-io/
+// TODO Blog - https://www.meziantou.net/computing-code-coverage-for-a-dotnet-core-project-with-azure-devops-and-coverlet.htm
+// TODO Coverlet - 코드에서 제외 시킨다.
+// TODO Coverlet - 명령어에서 제외 시킨다.
+// TODO Coverlet - 출력 경로를 변경한다.
+// TODO Coverlet - 명령어를 정리한다.
+// TODO Coverage Gutters - lcov.info 파일 경로를 변경한다.(./TestResults)
+// TODO Coverage Gutters - 기능을 이해한다?.
+// TODO .NET Core Test Explorer - 명령어?
+// TODO ReportGenerator - dotnet
+// TODO .NET Core - dotnet test
+// TODO .NET Core - dotnet tool
+// TODO .NET Core - dotnet watch
+// TODO VSCode - tasks.json
+// TODO VSCode - settings.json 전역/개별?
+// TODO GitHub - Azure Pipeline(https://www.azuredevopslabs.com/labs/azuredevops/github-integration/)
+
+
 namespace C01_Coverlet.Tests
 {
     public class UnitTest1
