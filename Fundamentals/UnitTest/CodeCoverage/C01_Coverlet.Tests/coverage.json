@@ -1,0 +1,43 @@
+{
+  "C01_Coverlet.dll": {
+    "C:\\Workspace\\Repo_Github\\Learning-FunctionalProgramming\\Fundamentals\\UnitTest\\CodeCoverage\\C01_Coverlet\\Class1.cs": {
+      "C01_Coverlet.Class1": {
+        "System.Int32 C01_Coverlet.Class1::Add(System.Int32,System.Int32)": {
+          "Lines": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "12": 0,
+            "13": 1
+          },
+          "Branches": [
+            {
+              "Line": 9,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 9,
+              "Offset": 7,
+              "EndOffset": 15,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 C01_Coverlet.Class1::Divide(System.Int32,System.Int32)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
