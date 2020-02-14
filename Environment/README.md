@@ -5,7 +5,7 @@
 - regedit 프로그램
   - 컴퓨터\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage
   - OEMCP : 949  
-    ![](./chcp_949..png)  
+    <img src="./chcp_949..png" width=70%/>  
   - chcp 명령어로 확인하기
     ```shell
     chcp      // 확인하기
