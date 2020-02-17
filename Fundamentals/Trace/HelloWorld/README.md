@@ -31,7 +31,6 @@
         | 14250 | HTTP     | collector | accept model.proto |
         | 9411  | HTTP     | collector | Zipkin compatible endpoint (optional) |
 1. 소스 빌드하기  
-   <img src="./Images/Command.png" witdh=80%/>  
    - Jaeger 서버 IP와 Port을 지정한다.
      ```cs
      var reporterConfiguration = new Configuration.ReporterConfiguration(loggerFactory)
@@ -41,18 +40,22 @@
             .WithAgentPort(6831))
         .WithLogSpans(true);
      ```
+   - 빌드 및 실행하기
+     - dotnet build
+     - dotnet run Foo  
+       <img src="./Images/Command.png" witdh=80%/>  
 1. Jaeger 결과 확인하기  
    - ServiceName과 Trace을 확인한다.
      - ServiceName: hello-world
      - Span: say-hello  
-     <img src="./Images/JaegerTrace.png" width=80%/>  
+       <img src="./Images/JaegerTrace.png" width=80%/>  
    - Span에 출력된 Tags, Logs을 확인한다.  
      - Tag: hello-to, Foo
      - Log
        - string.Format, Hello, Foo!
        - WriteLine
-     <img src="./Images/JaegerSpan.png" width=80%/>
-     ```cs
+     - 소스       
+       ```cs
         public void SayHello(string helloTo)
         {
             var span = _tracer.BuildSpan("say-hello").Start();
@@ -68,4 +71,5 @@
             span.Log("WriteLine");
             span.Finish();
         }
-     ```
+       ```  
+       <img src="./Images/JaegerSpan.png" width=80%/>
