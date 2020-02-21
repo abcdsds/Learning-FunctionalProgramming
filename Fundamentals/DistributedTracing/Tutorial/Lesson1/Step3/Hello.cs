@@ -1,9 +1,8 @@
-using System;
 using Microsoft.Extensions.Logging;     // ILoggerFactory
 using OpenTracing;                      // ITracer, ISpan
 //using OpenTracing.Util;
 using System.Collections.Generic;
-
+using System.Diagnostics.Contracts;
 
 namespace Step3
 {
@@ -22,7 +21,7 @@ namespace Step3
         {
             ISpan span = _tracer.BuildSpan("say-hello").Start();
 
-            var msg = HelloFor(helloTo);
+            var msg = GreetingFor(helloTo);
             _logger.LogInformation(msg);
 
             // Span - Tag
@@ -42,7 +41,8 @@ namespace Step3
             span.Finish();
         }
 
-        private string HelloFor(string helloTo)
+        [Pure]
+        private string GreetingFor(string helloTo)
         {
             return $"Hello, {helloTo}!";
         }

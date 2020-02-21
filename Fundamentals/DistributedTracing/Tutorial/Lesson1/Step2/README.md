@@ -5,17 +5,26 @@
 
 ## 배움
 - dotnet 패키지 참조 명령어
+  - dotnet add package
+  - dotnet remove package
 - Microsoft.Extensions.Logging 로그 출력
+  - ```ILoggerFactory```
+  - ```ILogger<T>```
 - C# 8.0 using 선언
+  - using var x = ...;
 
-1. .NET Core Console 프로젝트 만들기 & 실행하기
+## 따라하기
+1. .NET Core 프로젝트 만들기
    ```shell
     C:\PoC\Tutorial> dotnet new console -o .\Lesson1\Step2          // Console 프로젝트 만들기
     C:\PoC\Tutorial> dotnet sln add .\Lesson1\Step2\                // Step2 프로젝트 추가하기
 
-    // 솔루션 폴더일 때
+    //
+    // 프로젝트 참조 추가하기
+    //
+    // 1. 솔루션 폴더 위치에서
     C:\PoC\Tutorial> dotnet add .\Lesson1\Step2\ package Microsoft.Extensions.Logging.Console
-    // 프로젝트 폴더일 때
+    // 2. 프로젝트 폴더 위치에서
     C:\PoC\Tutorial\Lesson1\Step2> dotnet add package Microsoft.Extensions.Logging.Console
 
     C:\PoC\Tutorial> dotnet build                                   // 솔루션 빌드하기
@@ -23,20 +32,7 @@
     info: Step2.Hello[0]
       Hello, Foo!
    ```
-1. .NET Core 패키지 명령어
-   - 명령어
-     - [dotnet add (프로젝트 경로) package 패키지이름](https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-add-package)
-     - [dotnet remove (프로젝트 경로) package 패키지이름](https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-remove-package)
-     - [dotnet list (프로젝트 경로) package 패키지이름](https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-list-package)
-     - TODO 복수개 패키지 동시에 추가하기
-     - TODO 복수개 패키지 동시에 삭제하기
-   - 패키지 저장 경로
-     - Windows: %userprofile%\.nuget\packages
-     - macOS, Linux: ~/.nuget/packages
-   - 주요 옵션
-     - -v 버전
-     - --package-directory 경로
-1. Microsoft.Extensions.Logging
+1. Microsoft.Extensions.Logging 로그 출력하기
    - [로그 팩토리(```ILoggerFactory```)](https://docs.microsoft.com/ko-kr/dotnet/api/microsoft.extensions.logging.iloggerfactory?view=dotnet-plat-ext-3.1)
      ```cs
      using (ILoggerFactory loggerFactory = LoggerFactory.Create(builder => builder.AddConsole()))
@@ -52,16 +48,33 @@
                _logger = loggerFactory.CreateLogger<Hello>();
          }
      ```
-1. C# 8.0 using 키워드     
+1. C# 8.0 using 선언하기
    - C# 8.0 언어 버전을 지정한다.
      ```xml
       <PropertyGroup>
         <LagVersion>8.0</LagVersion>
       </PropertyGroup>
      ```
-   - using 문(statement) -> using 선언(declation, C# 8.0)
+   - using 선언(declation, C# 8.0) vs. using 문(statement)
      ```cs
+	 using 선언(declation, C# 8.0)
      using var file = new System.IO.StreamWriter("WriteLines2.txt");
+	 
      // vs.
+	 
+	 // using 문(statement)
      using (var file = new System.IO.StreamWriter("WriteLines2.txt")) { ... }
      ```
+1. dotnet 패키지 명령어
+   - dotnet add: [링크](https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-add-package)
+     - 형식: ```dotnet add [<PROJECT>] package <PACKAGE_NAME> [-f|--framework] [--package-directory] [-v|--version]
+     - 예: dotnet add [프로젝트 폴더] add 
+       - 최신 버전 참조하기
+         - dotnet add package Newtonsoft.Json
+       - 특정 버전 참조하기
+         - dotnet add package Newtonsoft.Json -v 12.0.3
+   - dotnet remove: [링크](https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-remove-package)
+   - dotnet list: [링크](https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-list-package)
+   - 패키지 저장 경로
+     - Windows: %userprofile%\.nuget\packages
+     - macOS, Linux: ~/.nuget/packages

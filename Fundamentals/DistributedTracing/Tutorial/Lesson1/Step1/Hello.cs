@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.Contracts;
 
 namespace Step1
 {
@@ -6,11 +7,12 @@ namespace Step1
     {
         public void SayHello(string helloTo)
         {
-            var msg = HelloFor(helloTo);
-            Console.WriteLine(HelloFor(msg));
+            var msg = GreetingFor(helloTo);
+            Console.WriteLine(GreetingFor(msg));
         }
 
-        private string HelloFor(string helloTo)
+        [Pure]
+        private string GreetingFor(string helloTo)
         {
             return $"Hello, {helloTo}!";
         }

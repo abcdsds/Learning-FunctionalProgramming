@@ -1,4 +1,4 @@
-using System;
+using System.Diagnostics.Contracts;
 using Microsoft.Extensions.Logging;
 
 namespace Step2
@@ -14,11 +14,12 @@ namespace Step2
 
         public void SayHello(string helloTo)
         {
-            var msg = HelloFor(helloTo);
+            var msg = GreetingFor(helloTo);
             _logger.LogInformation(msg);
         }
 
-        private string HelloFor(string helloTo)
+        [Pure]
+        private string GreetingFor(string helloTo)
         {
             return $"Hello, {helloTo}!";
         }
