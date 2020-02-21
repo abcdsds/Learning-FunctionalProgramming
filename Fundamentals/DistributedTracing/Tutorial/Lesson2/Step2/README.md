@@ -1,4 +1,4 @@
-# Lession 2 - **Step 2**
+# Lesson 2 - **Step 2**
 
 ## 목표
 
@@ -42,6 +42,10 @@
 
         // scope.Span.xxx
      ```
+1. Span 계층 구조 이해하기
+   - 부모 Span: SayHello
+   - 자식 Span: FormatHello, PrintHello  
+     ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hhko/Learning-FunctionalProgramming/tree/master/Fundamentals/DistributedTracing/Tutorial/Lesson2/Step2/UMLs/SpanHierarchy.puml)
 1. 콘솔 출력 확인하기
    - Span Id을 확인한다: c8a3b0c985a449fa
      ```shell

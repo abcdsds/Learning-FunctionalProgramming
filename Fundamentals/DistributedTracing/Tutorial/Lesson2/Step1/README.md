@@ -1,4 +1,4 @@
-# Lession 2 - **Step 1**
+# Lesson 2 - **Step 1**
 
 ## 목표
 
@@ -24,7 +24,7 @@
     C:\PoC\Tutorial> dotnet add .\Lesson2\Step1\ reference .\LessonLib\
    ```
 1. 명시적 자식 Span 만들기
-   - **조건: 부모 Span을 알아야한다.**
+   - **조건: 부모 Span을 알아야 한다.**
    - 생성: BuildSpan와 AsChildOf(부모 Span)
    - 시작: Start
    - 중지: Finish 또는 Dispose
@@ -36,6 +36,10 @@
         span.Finish();
         //span.Dispose();
      ```
+1. Span 계층 구조 이해하기
+   - 부모 Span: SayHello
+   - 자식 Span: FormatHello, PrintHello  
+     ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hhko/Learning-FunctionalProgramming/tree/master/Fundamentals/DistributedTracing/Tutorial/Lesson2/Step1/UMLs/SpanHierarchy.puml)
 1. 콘솔 출력 확인하기
    - Span Id을 확인한다: f731a7ba41041858
      ```shell

@@ -1,4 +1,4 @@
-# Lession1 > Step2
+# Lesson 1 - **Step 2**
 
 ## 목표
 - 로그(Microsoft.Extensions.Logging)을 출력한다.

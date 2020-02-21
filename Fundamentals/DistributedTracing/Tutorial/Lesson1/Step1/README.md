@@ -1,4 +1,4 @@
-# Lession 1 - **Step 1**
+# Lesson 1 - **Step 1**
 
 ## 목표
 - .NET Core Console 프로그램을 개발한다.

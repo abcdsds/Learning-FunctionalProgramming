@@ -1,4 +1,4 @@
-# Lession 1 - **Step 3**
+# Lesson 1 - **Step 3**
 
 ## 목표
 - Trace 메시지(Jaeger)을 출력한다.
