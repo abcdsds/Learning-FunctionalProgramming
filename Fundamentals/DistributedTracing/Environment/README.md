@@ -91,7 +91,3 @@
      vagrant@m1:~S docker container ls
      ```
    - 접속하기: http://192.168.99.201:9411
-1. TODO
-   - Skywalking 설치
-   - OpenTelemetry 설치
-   - ELK 설치

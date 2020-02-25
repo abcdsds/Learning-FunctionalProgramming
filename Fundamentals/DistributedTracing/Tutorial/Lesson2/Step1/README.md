@@ -14,14 +14,14 @@
 1. .NET Core 프로젝트 만들기
    ```shell
     // 프로젝트 만들기
-    dotnet new console -o .\Lesson2\Step1
-    dotnet sln add .\Lesson2\Step1\
+    C:\DistributedTracing\Tutorial> dotnet new console -o .\Lesson2\Step1
+    C:\DistributedTracing\Tutorial> dotnet sln add .\Lesson2\Step1\
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson2\Step1\ reference .\LessonLib\
 
-    // 패키지 & 프로젝트 참조하기
-    C:\PoC\Tutorial> dotnet add .\Lesson2\Step1\ package Microsoft.Extensions.Logging.Console
-    C:\PoC\Tutorial> dotnet add .\Lesson2\Step1\ package Jaeger
-    C:\PoC\Tutorial> dotnet add .\Lesson2\Step1\ package OpenTracing
-    C:\PoC\Tutorial> dotnet add .\Lesson2\Step1\ reference .\LessonLib\
+    // 패키지 참조하기
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson2\Step1\ package Microsoft.Extensions.Logging.Console
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson2\Step1\ package Jaeger
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson2\Step1\ package OpenTracing
    ```
 1. 명시적 자식 Span 만들기
    - **조건: 부모 Span을 알아야 한다.**
@@ -43,7 +43,7 @@
 1. 콘솔 출력 확인하기
    - Span Id을 확인한다: f731a7ba41041858
      ```shell
-        C:\PoC\Tutorial>  dotnet run --project .\Lesson2\Step1\ Foo
+        C:\DistributedTracing\Tutorial>  dotnet run --project .\Lesson2\Step1\ Foo
         info: Jaeger.Configuration[0]
               Initialized Tracer(ServiceName=hello-world, Version=CSharp-0.3.6.0, Reporter=CompositeReporter(Reporters=RemoteReporter(Sender=UdpSender(UdpTransport=ThriftUdpClientTransport(Client=192.168.99.201:6831))), LoggingReporter(Logger=Microsoft.Extensions.Logging.Logger`1[Jaeger.Reporters.LoggingReporter])), Sampler=ConstSampler(True), IPv4=-1062721647, Tags=[jaeger.version, CSharp-0.3.6.0], [hostname, DESKTOP-SK0NU4O], [ip, 192.168.39.145], ZipkinSharedRpcSpan=False, ExpandExceptionLogs=False, UseTraceId128Bit=False)
         info: Jaeger.Reporters.LoggingReporter[0]

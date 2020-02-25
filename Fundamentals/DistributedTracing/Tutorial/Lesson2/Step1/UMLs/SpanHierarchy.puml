@@ -1,7 +1,7 @@
 @startuml
 
 participant Main 
-participant SayHello << **Parent** Span >>
+participant SayHello << Parent Span >>
 participant FormatHello << Child Span >>
 participant PrintHello << Child Span >>
 

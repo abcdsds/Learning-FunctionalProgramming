@@ -2,6 +2,50 @@
 
 - 설레임이 있는 개발을 위해!
 
+## 주요 개념 관계
+
+- 순수 함수(Prue Function) vs. 비순수 함수(Impure Function)
+  - 조건: Side Effect Free, 참조 투명성(Referential Transparency)
+  - 결과: 출력은 입력에만 의존한다.
+  - 효과
+    - 격리(Isolation), 블랙박스 => 단위 테스트
+    - 결과 有 => 식(Expression)
+    - 연결 => 합성 함수(Composite Function)
+    - 치환 => 지연 처리(Lazy Evaluation)
+    - 병렬화
+
+## 주요 개념
+
+- First-class citizen
+  - First-class function, First-class class
+- Immutabe vs. Mutable
+- Pure Function vs. Impure Function
+- Side Effects
+- Referential Transparency
+- Expression vs. Statement
+- Higher Order Function
+- Strategy Pattern vs. Template Method Pattern
+- Lambda Function
+- Closure
+- Lazy Evaluation
+- Recursive
+- Category Theory
+- Composite Function
+- Functor
+- Applicative Functor
+- Monoid
+- Monad
+- Free Monad
+- Pattern matching
+- Covariance vs. Contravariance
+- Currying
+- Abstraction
+- Morphism
+- Identity
+- Associated Law
+  - 이항연산이 만족하거나 만족하지 않는 성질이다.
+  - 한 식에서 연산이 두 번 이상 연속될 때, 앞쪽의 연산을 먼저 계산한 값과 뒤쪽의 연산을 먼저 계산한 결과가 항상 같을 경우 그 연산은 결합법칙을 만족한다고 한다.
+
 ## 개발 환경 구성
 
 1. [C# 개발 환경 구축하기](./Environment/Setup-CSharp.md)
@@ -62,6 +106,10 @@
 1. BLOG - [Dimitris Papadimitriou - Introduction to Functors in C#](https://medium.com/@dimpapadim3/introduction-to-functors-in-c-1e6b434c85ae)
 1. BLOG - [Dimitris Papadimitriou - Monads for object oriented programming with C#](https://medium.com/@dimpapadim3/monads-in-oop-with-c-a4ec11f1f9d9)
 1. BLOG - [A Glossary of Functional Programming](http://degoes.net/articles/fp-glossary)
+1. BLOG - [The Science Behind Functional Programming](https://www.47deg.com/blog/science-behind-functional-programming/)
+1. BLOG - [Functional C#](https://weblogs.asp.net/dixin/Tags/Functional%20C%23)
+1. BLOG - [Functional Programming in C#: A Brief Guide](http://hamidmosalla.com/2019/04/25/functional-programming-in-c-sharp-a-brief-guide/)
+1. BLOG - [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon#arity)
 1. EDU - [컴퓨터과학이 여는 세계](https://www.youtube.com/watch?v=HTWSPoDLmHI&list=PL0Nf1KJu6Ui7yoc9RQ2TiiYL9Z0MKoggH)
 1. EDU - [Functional Programming with C#](https://www.pluralsight.com/courses/functional-programming-csharp)
 1. EDU - [Applying Functional Principles in C#](https://www.pluralsight.com/courses/csharp-applying-functional-principles)
@@ -71,3 +119,7 @@
 1. SRC - [LanguageExt](https://github.com/louthy/language-ext)
 1. PPT - [Category Theory for Beginners](https://www.slideshare.net/kenbot/category-theory-for-beginners), [Youtube](https://www.youtube.com/watch?v=jDhMDgU7Koc)
 1. MOV - [Algebraic Data Types for C# - John Azariah](https://www.youtube.com/watch?v=CUdp1XGwRng&list=PL03Lrmd9CiGdch9Ul3PynPDZcZ18sz9KV&index=39)
+1. MOV - [Functional Programming With C# Workshop](https://www.youtube.com/watch?v=OPxyomlxP4o)
+1. MOV - [Functional Programming in C#](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Functional-Programming-in-CSharp)
+1. MOV - [Category theory and life](https://www.youtube.com/watch?v=ho7oagHeqNc)
+   - [PDF](https://slides.yowconference.com/yowlambdajam2018/Cheng-CategoryTheoryandLife.pdf)

@@ -15,17 +15,17 @@
 1. .NET Core 프로젝트 만들기
    ```shell
     // 프로젝트 만들기
-    C:\PoC\Tutorial> dotnet new console -o .\Lesson1\Step3
-    C:\PoC\Tutorial> dotnet sln add .\Lesson1\Step3\
+    C:\DistributedTracing\Tutorial> dotnet new console -o .\Lesson1\Step3
+    C:\DistributedTracing\Tutorial> dotnet sln add .\Lesson1\Step3\
 
     // 패키지 & 프로젝트 참조하기
-    C:\PoC\Tutorial> dotnet add .\Lesson1\Step3\ package Microsoft.Extensions.Logging.Console
-    C:\PoC\Tutorial> dotnet add .\Lesson1\Step3\ package Jaeger
-    C:\PoC\Tutorial> dotnet add .\Lesson1\Step3\ package OpenTracing
-    C:\PoC\Tutorial> dotnet add .\Lesson1\Step3\ reference .\LessonLib\
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson1\Step3\ package Microsoft.Extensions.Logging.Console
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson1\Step3\ package Jaeger
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson1\Step3\ package OpenTracing
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson1\Step3\ reference .\LessonLib\
 
     // 192.168.99.201:6831
-    C:\PoC\Tutorial> dotnet run --project .\Lesson1\Step3\ Foo
+    C:\DistributedTracing\Tutorial> dotnet run --project .\Lesson1\Step3\ Foo
     info: Jaeger.Configuration[0]
             Initialized Tracer(ServiceName=hello-world, Version=CSharp-0.3.6.0, Reporter=CompositeReporter(Reporters=RemoteReporter(Sender=UdpSender(UdpTransport=ThriftUdpClientTransport(Client=192.168.99.201:6831))), LoggingReporter(Logger=Microsoft.Extensions.Logging.Logger`1[Jaeger.Reporters.LoggingReporter])), Sampler=ConstSampler(True), IPv4=-1062721647, Tags=[jaeger.version, CSharp-0.3.6.0], [hostname, DESKTOP-SK0NU4O], [ip, 192.168.39.145], ZipkinSharedRpcSpan=False, ExpandExceptionLogs=False, UseTraceId128Bit=False)
     info: Step3.Hello[0]

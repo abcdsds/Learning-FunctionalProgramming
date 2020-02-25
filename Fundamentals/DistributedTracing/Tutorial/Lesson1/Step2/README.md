@@ -16,19 +16,19 @@
 ## 따라하기
 1. .NET Core 프로젝트 만들기
    ```shell
-    C:\PoC\Tutorial> dotnet new console -o .\Lesson1\Step2          // Console 프로젝트 만들기
-    C:\PoC\Tutorial> dotnet sln add .\Lesson1\Step2\                // Step2 프로젝트 추가하기
+    C:\DistributedTracing\Tutorial> dotnet new console -o .\Lesson1\Step2          // Console 프로젝트 만들기
+    C:\DistributedTracing\Tutorial> dotnet sln add .\Lesson1\Step2\                // Step2 프로젝트 추가하기
 
     //
     // 프로젝트 참조 추가하기
     //
     // 1. 솔루션 폴더 위치에서
-    C:\PoC\Tutorial> dotnet add .\Lesson1\Step2\ package Microsoft.Extensions.Logging.Console
+    C:\DistributedTracing\Tutorial> dotnet add .\Lesson1\Step2\ package Microsoft.Extensions.Logging.Console
     // 2. 프로젝트 폴더 위치에서
-    C:\PoC\Tutorial\Lesson1\Step2> dotnet add package Microsoft.Extensions.Logging.Console
+    C:\DistributedTracing\Tutorial\Lesson1\Step2> dotnet add package Microsoft.Extensions.Logging.Console
 
-    C:\PoC\Tutorial> dotnet build                                   // 솔루션 빌드하기
-    C:\PoC\Tutorial> dotnet run --project .\Lesson1\Step2\ Foo      // Step2 프로젝트 실행하기
+    C:\DistributedTracing\Tutorial> dotnet build                                   // 솔루션 빌드하기
+    C:\DistributedTracing\Tutorial> dotnet run --project .\Lesson1\Step2\ Foo      // Step2 프로젝트 실행하기
     info: Step2.Hello[0]
       Hello, Foo!
    ```

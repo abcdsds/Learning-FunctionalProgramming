@@ -14,11 +14,11 @@
 ## 따라하기
 1. .NET Core 프로젝트 만들기
    ```shell
-    C:\PoC\Tutorial> dotnet new sln -n Tutorial                     // 솔루션 파일 만들기
-    C:\PoC\Tutorial> dotnet new console -o .\Lesson1\Step1          // Console 프로젝트 만들기
-    C:\PoC\Tutorial> dotnet sln add .\Lesson1\Step1\                // Step1 프로젝트 추가하기
-    C:\PoC\Tutorial> dotnet build                                   // 솔루션 빌드하기
-    C:\PoC\Tutorial> dotnet run --project .\Lesson1\Step1\ Foo      // Step1 프로젝트 실행하기
+    C:\DistributedTracing\Tutorial> dotnet new sln -n Tutorial                     // 솔루션 파일 만들기
+    C:\DistributedTracing\Tutorial> dotnet new console -o .\Lesson1\Step1          // Console 프로젝트 만들기
+    C:\DistributedTracing\Tutorial> dotnet sln add .\Lesson1\Step1\                // Step1 프로젝트 추가하기
+    C:\DistributedTracing\Tutorial> dotnet build                                   // 솔루션 빌드하기
+    C:\DistributedTracing\Tutorial> dotnet run --project .\Lesson1\Step1\ Foo      // Step1 프로젝트 실행하기
     Hello, Foo!
    ```
 1. 순수 함수 구현하기
