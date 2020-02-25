@@ -15,6 +15,8 @@ namespace C01_Coverlet
         public int Divide(int x, int y)
         {
             return x / y;
+        
+        
         }
     }
 }

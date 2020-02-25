@@ -4,7 +4,9 @@
 
 - regedit 프로그램
   - 컴퓨터\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage
-  - OEMCP : 949  
+  - OEMCP : 949  또는 65001
+    - 949 : 한국어
+    - 65001 : UTF-8   
     <img src="./chcp_949..png" width=70%/>  
   - chcp 명령어로 확인하기
     ```shell
