@@ -15,7 +15,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using OpenTracing.Util;
 
-
 namespace ServerWebapi
 {
     public class Startup

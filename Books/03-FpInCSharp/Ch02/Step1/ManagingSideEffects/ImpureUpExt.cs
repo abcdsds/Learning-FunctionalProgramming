@@ -33,7 +33,7 @@ namespace ManagingSideEffects
 
             var greet = ReadLine()
                 .GreetingFor();
-                
+
             WriteLine(greet);
         }
     }

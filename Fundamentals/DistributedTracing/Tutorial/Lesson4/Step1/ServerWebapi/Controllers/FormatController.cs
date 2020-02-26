@@ -11,6 +11,7 @@ namespace ServerWebapi.Controllers
 
         public FormatController(ITracer tracer)
         {
+            // 자동으로 주입된다.
             _tracer = tracer;
         }
 
@@ -27,18 +28,14 @@ namespace ServerWebapi.Controllers
         {
             using (var scope = _tracer.BuildSpan("format-controller").StartActive(true))
             {
-                //
-                // GetBaggageItem
-                //
-                //var greeting = scope.Span.GetBaggageItem("greeting") ?? "Hello";
+                var greeting = scope.Span.GetBaggageItem("greeting") ?? "Hello";
 
-                var greeting = "Greeting";
-                var formattedHelloString = $"Hello, {helloTo}, {greeting}!";
-                // scope.Span.Log(new Dictionary<string, object>
-                // {
-                //     [LogFields.Event] = "string-format",
-                //     ["value"] = formattedHelloString
-                // });
+                var formattedHelloString = $"Hello, {helloTo}!, {greeting}";
+                scope.Span.Log(new Dictionary<string, object>
+                {
+                    [LogFields.Event] = "string-format",
+                    ["value"] = formattedHelloString
+                });
                 return formattedHelloString;
             }
         }

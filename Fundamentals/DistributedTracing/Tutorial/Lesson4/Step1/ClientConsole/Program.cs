@@ -60,18 +60,6 @@ namespace ClientConsole
                 // Key     "uber-trace-id"
                 // Value   "2f023a4cbb039a4b%3Ac8c0105f4211e02b%3A2f023a4cbb039a4b%3A1"
 
-                // [0] {[uber-trace-id, d7b2ea2ab5b3a14a%3Aa7ca1d5c2538831c%3Ad7b2ea2ab5b3a14a%3A1]
-                // [1] {[uberctx-greeting, Bar] System.Collections.Generic.KeyValuePair<string, string>
-
-//                +       [0] {[uber-trace-id, d7b2ea2ab5b3a14a%3Aa7ca1d5c2538831c%3Ad7b2ea2ab5b3a14a%3A1]
-//    }
-//    System.Collections.Generic.KeyValuePair<string, string>
-//+		[1]	{[uberctx-greeting, Bar]
-//}
-//System.Collections.Generic.KeyValuePair<string, string>
-
-
-
                 foreach (var entry in dictionary)
                     _webClient.Headers.Add(entry.Key, entry.Value);
                 
@@ -114,10 +102,10 @@ namespace ClientConsole
 
         public static void Main(string[] args)
         {
-            //if (args.Length != 2)
-            //{
-            //  throw new ArgumentException("Expecting two arguments, helloTo and greeting");
-            //}
+            if (args.Length != 2)
+            {
+              throw new ArgumentException("Expecting two arguments, helloTo and greeting");
+            }
 
             //
             // SSL 접속 예외 처리
@@ -128,9 +116,8 @@ namespace ClientConsole
 
             using ILoggerFactory loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
             using Tracer tracer = Tracing.Init("hello-world", loggerFactory);
-
-            //new Hello(tracer, loggerFactory).SayHello(args[0], args[1]);
-            new Hello(tracer, loggerFactory).SayHello("Foo", "Bar");
+            
+            new Hello(tracer, loggerFactory).SayHello(args[0], args[1]);
         }
     }
 }

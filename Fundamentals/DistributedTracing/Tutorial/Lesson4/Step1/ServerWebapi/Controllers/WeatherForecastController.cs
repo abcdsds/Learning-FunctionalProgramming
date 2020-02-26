@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using OpenTracing;
 
 namespace ServerWebapi.Controllers
 {
@@ -17,10 +18,14 @@ namespace ServerWebapi.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ITracer _tracer;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, ITracer tracer)
         {
             _logger = logger;
+
+            // 자동으로 주입된다.
+            _tracer = tracer;
         }
 
         [HttpGet]

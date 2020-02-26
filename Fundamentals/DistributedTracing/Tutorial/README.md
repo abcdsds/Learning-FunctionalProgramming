@@ -4,11 +4,13 @@
 
 ## 구성
 
+http://192.168.99.201:16686/
+
 1. [Lesson 1](./Lesson1)
 1. [Lesson 2](./Lesson2)
 1. [Lesson 3](./Lesson3)
-1. Lesson 4
-1. [Lesson 5](./Lesson5)
+1. [Lesson 4](./Lesson4)
+1. Lesson 5
 
 ## TODO
 
@@ -35,4 +37,4 @@
   - FormatString -> Child1
   - PrintHello -> Child2
 
-http://192.168.99.201:16686/
+
