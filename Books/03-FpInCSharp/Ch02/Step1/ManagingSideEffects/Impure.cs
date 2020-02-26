@@ -3,7 +3,7 @@ using static System.Console;
 
 namespace ManagingSideEffects
 {
-    public class ImpureIO
+    public class Impure
     {
         public void SideEffects()
         {

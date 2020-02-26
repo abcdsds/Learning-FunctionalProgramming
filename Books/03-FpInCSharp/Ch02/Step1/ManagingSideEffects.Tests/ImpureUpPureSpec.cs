@@ -4,13 +4,13 @@ using FluentAssertions;
 
 namespace ManagingSideEffects.Tests
 {
-    public class ImpureUpSpec
+    public class ImpureUpPureSpec
     {
         [Fact]
         public void Create_GreetingFor_Stantance()
         {
-            // Act
-            ImpureUp sut = new ImpureUp();
+            // Arrange
+            ImpureUpPure sut = new ImpureUpPure();
 
             // Act
             string actual = sut.GreetingFor("Foo");

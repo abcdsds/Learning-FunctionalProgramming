@@ -25,15 +25,21 @@ using static System.Console;
 
 namespace ManagingSideEffects
 {
-    public class ImpureUp
+    public class ImpureUpExt
     {
         public void SideEffects()
         {
             WriteLine("Enter your name:");
-            var name = ReadLine();
-            WriteLine(GreetingFor(name));
-        }
 
+            var greet = ReadLine()
+                .GreetingFor();
+                
+            WriteLine(greet);
+        }
+    }
+
+    public static class StringExt
+    {
         // ===================================================
         // 순수 함수
         // ===================================================
@@ -45,7 +51,7 @@ namespace ManagingSideEffects
         // 클래스: PureAttribue
         // 네임스페이스: System.Diagnostics.Contracts
         [Pure]
-        public string GreetingFor(string name) =>
-            $"Hello {name}";
+        public static string GreetingFor(this string self) =>
+            $"Hello {self}";
     }
 }

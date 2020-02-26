@@ -1,22 +1,36 @@
 # Managing Side Effects
 
 ## 목표
-- 순수 함수와 비순순 함수를 분리한다.
+- 순수 함수와 불순 함수를 분리한다.
 - 순수 함수는 [Pure]로 명시한다.
+
+## 과제
+1. 불순 함수(I/O)
+   ```cs
+        public void SideEffects()
+        {
+            WriteLine("Enter your name:");
+            var name = ReadLine();
+            WriteLine($"Hello {name}");
+        }   
+   ```
+1. 불순함수 분리하기
 
 ## 따라하기
 1. 프로젝트 만들기
-   - ```dotnet new console -o ManagingSideEffects```
-   - ```dotnet new xunit -o ManagingSideEffects.Tests```
-1. 프로젝트 추가하기
+   - ```dotnet new console -o .\Ch02\Step1\ManagingSideEffects```
+   - ```dotnet new xunit -o.\Ch02\Step1\ManagingSideEffects.Tests```
+1. 프로젝트 참조하기
+   - ```dotnet add .\Ch02\Step2\ManagingSideEffects.Tests reference .\Ch02\Step2\ManagingSideEffects```
+3. 프로젝트 추가하기
    - ```dotnet sln add .\Ch02\Step1\ManagingSideEffects```
    - ```dotnet sln add .\Ch02\Step1\ManagingSideEffects.Tests```
-1. 패키지 참조하기
+4. 패키지 참조하기
    - ```dotnet add .\Ch02\Step1\ManagingSideEffects.Tests package FluentAssertions```
-1. VSCode 확장 도구 설치하기
+5. VSCode 확장 도구 설치하기
    - .NET Core Test Explorer
    - Coverage Gutters
-1. 코드 커버리지 만들기
+6. 코드 커버리지 만들기
    - 참고 URL: https://github.com/tonerdo/coverlet
    - 명령어
      - ```dotnet add .\Ch02\Step1\ManagingSideEffects.Tests package Coverlet.MSBuild```

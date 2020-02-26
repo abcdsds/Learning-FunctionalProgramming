@@ -6,7 +6,14 @@ namespace ManagingSideEffects
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Impure impure = new Impure();
+            impure.SideEffects();
+
+            ImpureUpPure upPure = new ImpureUpPure();
+            upPure.SideEffects();
+
+            ImpureUpExt upExt = new ImpureUpExt();
+            upExt.SideEffects();
         }
     }
 }
