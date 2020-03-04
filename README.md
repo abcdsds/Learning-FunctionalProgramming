@@ -23,15 +23,16 @@
 
 ## 주요 개념 관계
 
-- 순수 함수(Prue Function) vs. 비순수 함수(Impure Function)
+- 순수 함수(Prue Function) vs. 불수 함수(Impure Function)
   - 조건: Side Effect Free, 참조 투명성(Referential Transparency)
-  - 결과: 출력은 입력에만 의존한다.
-  - 효과
-    - 격리(Isolation), 블랙박스 => 단위 테스트
-    - 결과 有 => 식(Expression)
-    - 연결 => 합성 함수(Composite Function)
-    - 치환 => 지연 처리(Lazy Evaluation)
-    - 병렬화
+    - 출력은 입력만 의존한다.
+  - 결과
+    - 격리(Isolation) => 단위 테스트가 쉽다.
+    - 격리(Isolation) => 병렬화가 쉽다.
+    - 함수 출력 有 => 함수 출력이 있다(식: Expression).
+    - 함수 출력 有 => 함수 출력을 다음 함수의 입력으로 연결할 수 있다(합성 함수: Composite Function)
+    - 함수 출력 有 => 함수 출력 값을 재사용할 수 있다(치환, 지연 처리: Lazy Evaluation)
+    
 
 ## 주요 개념
 
