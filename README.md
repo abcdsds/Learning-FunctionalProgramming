@@ -1,25 +1,48 @@
-# More Fun with You by Computer Programming
+# Programming for More Fun with You
+설렘이 있는 프로그래밍
 
-## Books
-1. 
+## 목차 
 
-## OS
-1. Linux
-1. Windows
+* [00-Books](.\00-Books)
+  * [Functional Programming in C#](.\00-Books\FpInCSharp)
+  * [코틀린으로 배우는 함수형 프로그래밍](.\00-Books\LearnFunctionalProgrammingWithKotlin)
+  * [MakingYourCSharpCodeMoreFunctional](.\00-Books\MakingYourCSharpCodeMoreFunctional)
+  * [Object](.\00-Books\Object)
+* [01-Glossary](.\01-Glossary)
+* [02-OS](.\02-OS)
+  * [Linux](.\02-OS\Linux)
+  * [Windows](.\02-OS\Windows)
+  * [chcp_949..png](.\Learning-FunctionalProgramming\02-OS\chcp_949..png)
+* [03-IDE](.\03-IDE)
+  * [Git](.\03-IDE\Git)
+  * [GitHub](.\03-IDE\GitHub)
+  * [GitLab](.\03-IDE\GitLab)
+  * [VSCode](.\03-IDE\VSCode)
+* [04-Runtime](.\04-Runtime)
+  * [DotNetCore3](.\04-Runtime\DotNetCore3)
+* [05-Container](.\05-Container)
+  * [Docker](.\05-Container\Docker)
+  * [Kubernetes](.\05-Container\Kubernetes)
+* [06-Language](.\06-Language)
+  * [CSharp](.\06-Language\CSharp)
+  * [FSharp](.\06-Language\FSharp)
+  * [Golang](.\06-Language\Golang)
+* [07-ActorModel](.\07-ActorModel)
+* [08-Network](.\08-Network)
+  * [DistributedTracing](.\08-Network\DistributedTracing)
+  * [Kafka](.\08-Network\Kafka)
+* [09-Design](.\09-Design)
+  * [DDD](.\09-Design\DDD)
+  * [TDD](.\09-Design\TDD)
+* [10-Architecture](.\10-Architecture)
+  * [HonstDesign](.\10-Architecture\HonstDesign)
+* [11-NoSQL](.\11-NoSQL)
+  * [Elaticsearch](.\11-NoSQL\Elaticsearch)
+  * [MongoDB](.\11-NoSQL\MongoDB)
+  * [Redis](.\11-NoSQL\Redis)
 
-## IDE
-1. Visual Studio Code
 
-## Runtime
-1. .NET Core
-
-## Paradigam
-1. Functional Programming
-
-
-
-
-- 설레임이 있는 개발을 위해!
+<br/>
 
 ## 주요 개념 관계
 
