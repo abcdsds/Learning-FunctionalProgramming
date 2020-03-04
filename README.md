@@ -1,4 +1,23 @@
-# Learning Functional Programming
+# More Fun with You by Computer Programming
+
+## Books
+1. 
+
+## OS
+1. Linux
+1. Windows
+
+## IDE
+1. Visual Studio Code
+
+## Runtime
+1. .NET Core
+
+## Paradigam
+1. Functional Programming
+
+
+
 
 - 설레임이 있는 개발을 위해!
 
@@ -110,6 +129,8 @@
 1. BLOG - [Functional C#](https://weblogs.asp.net/dixin/Tags/Functional%20C%23)
 1. BLOG - [Functional Programming in C#: A Brief Guide](http://hamidmosalla.com/2019/04/25/functional-programming-in-c-sharp-a-brief-guide/)
 1. BLOG - [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon#arity)
+1. BLOG - [Functional Programming (F#) for C# Developers](https://www.dotnetcurry.com/csharp/1384/functional-programming-fsharp-for-csharp-developers)
+1. BLOG - [Introduction to functional programming with C#](https://medium.com/@naveenrtr/introduction-to-functional-programming-with-c-b167f15221e1)
 1. EDU - [컴퓨터과학이 여는 세계](https://www.youtube.com/watch?v=HTWSPoDLmHI&list=PL0Nf1KJu6Ui7yoc9RQ2TiiYL9Z0MKoggH)
 1. EDU - [Functional Programming with C#](https://www.pluralsight.com/courses/functional-programming-csharp)
 1. EDU - [Applying Functional Principles in C#](https://www.pluralsight.com/courses/csharp-applying-functional-principles)
@@ -123,3 +144,23 @@
 1. MOV - [Functional Programming in C#](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Functional-Programming-in-CSharp)
 1. MOV - [Category theory and life](https://www.youtube.com/watch?v=ho7oagHeqNc)
    - [PDF](https://slides.yowconference.com/yowlambdajam2018/Cheng-CategoryTheoryandLife.pdf)
+
+## TODO - gRPC
+1. [Produce & Consume a .NET Core 3.0 gRPC Service with Entity Framework](https://www.youtube.com/watch?v=Xh47x_C-aMM)
+   - [GrpcWorld - GitHub](https://github.com/medhatelmasry/GrpcWorld)
+   - [GrpcWorld - BLOG](http://blog.medhat.ca/2019/10/producing-consuming-net-core-30-grpc-db.html) 
+   - .proto 파일
+     - build action 
+1. [Intro to gRPC in C# - How To Get Started](https://www.youtube.com/watch?v=QyxCX2GYHxk)
+   - .proto 파일: stream 
+     - Server cs 파일: IServiceStreamWriter
+     - Client cs 파일: using, ResponeStream.MoveNext(), .Current 
+   - .proto 파일: service X 
+     - Server cs 파일: XService : X.XBase
+1. [From WCF to gRPC](https://www.youtube.com/watch?v=76X9oo-LlUY)
+   - https://github.com/RendleLabs/ndc-london-2020
+   - https://github.com/RendleLabs/grpc-for-wcf-developers
+   - https://github.com/RendleLabs/grpc-dotnet
+1. [WCF 개발자를 위한 ASP.NET Core gRPC](https://docs.microsoft.com/ko-kr/dotnet/architecture/grpc-for-wcf-developers/)
+1. [Protocol Buffer Basics: C#](https://developers.google.com/protocol-buffers/docs/csharptutorial) 
+

@@ -1,4 +1,9 @@
-# Functional in CSharp
+# 함수형 프로그래밍 C#, Functional Programming in C#
+
+- 책 정보
+  - Book: https://www.manning.com/books/functional-programming-in-c-sharp
+  - GitHub: https://github.com/la-yumba/functional-csharp-code
+  - NuGet: https://www.nuget.org/packages/LaYumba.Functional
 
 # 목차
 

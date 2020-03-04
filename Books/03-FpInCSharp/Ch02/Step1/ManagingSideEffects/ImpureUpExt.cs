@@ -1,26 +1,11 @@
+// 목표
+//
+// 1. 순수 함수와 불순 함수를 구분한다.
+// 2. 순수 함수는 [Pure] 속성을 사용한다.
+// 3. 확장 메서드를 이용하여 함수를 연속 호출한다(Fluent Interface). 
+
 using System;
 using System.Diagnostics.Contracts;
-
-// ===================================================
-// using static directive 
-// ===================================================
-//
-// 1. 참고 URL
-// https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/using-static
-// https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-static
-// 
-// 2. 문법
-// using static <fully-qualified-type-name>;
-//
-// 3. 예
-// Math.PI;
-//  vs.
-// using static System.Math;
-// PI;
-//
-// 4. 가치
-// 순수 함수는 기본적으로 정적 함수로 개발한다.
-//
 using static System.Console;
 
 namespace ManagingSideEffects
@@ -31,27 +16,19 @@ namespace ManagingSideEffects
         {
             WriteLine("Enter your name:");
 
-            var greet = ReadLine()
-                .GreetingFor();
-
-            WriteLine(greet);
+            ReadLine()
+                .GreetingFor()
+                .Print();
         }
     }
 
     public static class StringExt
     {
-        // ===================================================
-        // 순수 함수
-        // ===================================================
-        //
-        // 1. 참고 URL
-        // https://docs.microsoft.com/ko-kr/dotnet/api/system.diagnostics.contracts.pureattribute?view=netframework-4.8
-        //
-        // 2. 개요
-        // 클래스: PureAttribue
-        // 네임스페이스: System.Diagnostics.Contracts
         [Pure]
         public static string GreetingFor(this string self) =>
             $"Hello {self}";
+
+        public static void Print(this string self) => 
+            WriteLine(self);
     }
 }
