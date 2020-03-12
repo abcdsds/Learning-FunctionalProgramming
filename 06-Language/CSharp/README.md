@@ -1,8 +1,12 @@
 
-https://github.com/gregkalapos/HighPerformanceCodingInDotNet_Workshop
-https://github.com/gregkalapos/AdvancedDotNetCSharpCourse/tree/master/Section0_CourseLogistics/CourseLogisticsSample
-https://github.com/gregkalapos/ESViennaMeetup28_may_2019
-https://github.com/gregkalapos/HihgPerfCsAndDotNet_Basta2019
-https://github.com/gregkalapos/StateOfObservabilityInDotNet
-https://github.com/elastic/opbeans-dotnet
-https://github.com/gregkalapos/HighPerfDotNetCoreAndCsCourse_Samples
+- [C# 8 and Beyond - Filip Ekberg](https://www.youtube.com/watch?v=1sPpal7nO98&t)
+  - [C# 8 and Beyond](https://github.com/fekberg/CSharp_8_and_beyond)
+  - [What-is-New-in-CSharp(C# 6.0, 7.x, 8.0)](https://github.com/fekberg/What-is-New-in-CSharp)
+- [Change your habits: Modern techniques for modern C# - Bill Wagner](https://www.youtube.com/watch?v=aUbXGs7YTGo&t)
+- https://github.com/gregkalapos/HighPerformanceCodingInDotNet_Workshop
+- https://github.com/gregkalapos/AdvancedDotNetCSharpCourse/tree/master/Section0_CourseLogistics/CourseLogisticsSample
+- https://github.com/gregkalapos/ESViennaMeetup28_may_2019
+- https://github.com/gregkalapos/HihgPerfCsAndDotNet_Basta2019
+- https://github.com/gregkalapos/StateOfObservabilityInDotNet
+- https://github.com/elastic/opbeans-dotnet
+- https://github.com/gregkalapos/HighPerfDotNetCoreAndCsCourse_Samples
