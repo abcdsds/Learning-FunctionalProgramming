@@ -1,0 +1,2 @@
+- https://github.com/dodyg/practical-aspnetcore
+- https://www.hanselman.com/blog/HundredsOfPracticalASPNETCoreSamplesToLearnTheFundamentals.aspx

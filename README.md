@@ -1,18 +1,61 @@
-# Learning Functional Programming
+# Programming for More Fun with You
+설렘이 있는 프로그래밍
 
-- 설레임이 있는 개발을 위해!
+## 목차 
+
+* [00-Books](.\00-Books)
+  * [Functional Programming in C#](.\00-Books\FpInCSharp)
+  * [코틀린으로 배우는 함수형 프로그래밍](.\00-Books\LearnFunctionalProgrammingWithKotlin)
+  * [MakingYourCSharpCodeMoreFunctional](.\00-Books\MakingYourCSharpCodeMoreFunctional)
+  * [Object](.\00-Books\Object)
+* [01-Glossary](.\01-Glossary)
+* [02-OS](.\02-OS)
+  * [Linux](.\02-OS\Linux)
+  * [Windows](.\02-OS\Windows)
+  * [chcp_949..png](.\Learning-FunctionalProgramming\02-OS\chcp_949..png)
+* [03-IDE](.\03-IDE)
+  * [Git](.\03-IDE\Git)
+  * [GitHub](.\03-IDE\GitHub)
+  * [GitLab](.\03-IDE\GitLab)
+  * [VSCode](.\03-IDE\VSCode)
+* [04-Runtime](.\04-Runtime)
+  * [DotNetCore3](.\04-Runtime\DotNetCore3)
+* [05-Container](.\05-Container)
+  * [Docker](.\05-Container\Docker)
+  * [Kubernetes](.\05-Container\Kubernetes)
+* [06-Language](.\06-Language)
+  * [CSharp](.\06-Language\CSharp)
+  * [FSharp](.\06-Language\FSharp)
+  * [Golang](.\06-Language\Golang)
+* [07-ActorModel](.\07-ActorModel)
+* [08-Network](.\08-Network)
+  * [DistributedTracing](.\08-Network\DistributedTracing)
+  * [Kafka](.\08-Network\Kafka)
+* [09-Design](.\09-Design)
+  * [DDD](.\09-Design\DDD)
+  * [TDD](.\09-Design\TDD)
+* [10-Architecture](.\10-Architecture)
+  * [HonstDesign](.\10-Architecture\HonstDesign)
+* [11-NoSQL](.\11-NoSQL)
+  * [Elaticsearch](.\11-NoSQL\Elaticsearch)
+  * [MongoDB](.\11-NoSQL\MongoDB)
+  * [Redis](.\11-NoSQL\Redis)
+
+
+<br/>
 
 ## 주요 개념 관계
 
-- 순수 함수(Prue Function) vs. 비순수 함수(Impure Function)
+- 순수 함수(Prue Function) vs. 불수 함수(Impure Function)
   - 조건: Side Effect Free, 참조 투명성(Referential Transparency)
-  - 결과: 출력은 입력에만 의존한다.
-  - 효과
-    - 격리(Isolation), 블랙박스 => 단위 테스트
-    - 결과 有 => 식(Expression)
-    - 연결 => 합성 함수(Composite Function)
-    - 치환 => 지연 처리(Lazy Evaluation)
-    - 병렬화
+    - 출력은 입력만 의존한다.
+  - 결과
+    - 격리(Isolation) => 단위 테스트가 쉽다.
+    - 격리(Isolation) => 병렬화가 쉽다.
+    - 함수 출력 有 => 함수 출력이 있다(식: Expression).
+    - 함수 출력 有 => 함수 출력을 다음 함수의 입력으로 연결할 수 있다(합성 함수: Composite Function)
+    - 함수 출력 有 => 함수 출력 값을 재사용할 수 있다(치환, 지연 처리: Lazy Evaluation)
+    
 
 ## 주요 개념
 
@@ -110,6 +153,8 @@
 1. BLOG - [Functional C#](https://weblogs.asp.net/dixin/Tags/Functional%20C%23)
 1. BLOG - [Functional Programming in C#: A Brief Guide](http://hamidmosalla.com/2019/04/25/functional-programming-in-c-sharp-a-brief-guide/)
 1. BLOG - [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon#arity)
+1. BLOG - [Functional Programming (F#) for C# Developers](https://www.dotnetcurry.com/csharp/1384/functional-programming-fsharp-for-csharp-developers)
+1. BLOG - [Introduction to functional programming with C#](https://medium.com/@naveenrtr/introduction-to-functional-programming-with-c-b167f15221e1)
 1. EDU - [컴퓨터과학이 여는 세계](https://www.youtube.com/watch?v=HTWSPoDLmHI&list=PL0Nf1KJu6Ui7yoc9RQ2TiiYL9Z0MKoggH)
 1. EDU - [Functional Programming with C#](https://www.pluralsight.com/courses/functional-programming-csharp)
 1. EDU - [Applying Functional Principles in C#](https://www.pluralsight.com/courses/csharp-applying-functional-principles)
@@ -123,3 +168,23 @@
 1. MOV - [Functional Programming in C#](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Functional-Programming-in-CSharp)
 1. MOV - [Category theory and life](https://www.youtube.com/watch?v=ho7oagHeqNc)
    - [PDF](https://slides.yowconference.com/yowlambdajam2018/Cheng-CategoryTheoryandLife.pdf)
+
+## TODO - gRPC
+1. [Produce & Consume a .NET Core 3.0 gRPC Service with Entity Framework](https://www.youtube.com/watch?v=Xh47x_C-aMM)
+   - [GrpcWorld - GitHub](https://github.com/medhatelmasry/GrpcWorld)
+   - [GrpcWorld - BLOG](http://blog.medhat.ca/2019/10/producing-consuming-net-core-30-grpc-db.html) 
+   - .proto 파일
+     - build action 
+1. [Intro to gRPC in C# - How To Get Started](https://www.youtube.com/watch?v=QyxCX2GYHxk)
+   - .proto 파일: stream 
+     - Server cs 파일: IServiceStreamWriter
+     - Client cs 파일: using, ResponeStream.MoveNext(), .Current 
+   - .proto 파일: service X 
+     - Server cs 파일: XService : X.XBase
+1. [From WCF to gRPC](https://www.youtube.com/watch?v=76X9oo-LlUY)
+   - https://github.com/RendleLabs/ndc-london-2020
+   - https://github.com/RendleLabs/grpc-for-wcf-developers
+   - https://github.com/RendleLabs/grpc-dotnet
+1. [WCF 개발자를 위한 ASP.NET Core gRPC](https://docs.microsoft.com/ko-kr/dotnet/architecture/grpc-for-wcf-developers/)
+1. [Protocol Buffer Basics: C#](https://developers.google.com/protocol-buffers/docs/csharptutorial) 
+

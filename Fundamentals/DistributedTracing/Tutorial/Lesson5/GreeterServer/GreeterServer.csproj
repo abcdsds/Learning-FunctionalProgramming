@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>GreeterServer</AssemblyTitle>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>GreeterServer</AssemblyName>
+    <PackageId>GreeterServer</PackageId>
+    <LagVersion>8.0</LagVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jaeger" Version="0.3.6" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.2" />
+    <PackageReference Include="OpenTracing.Contrib.Grpc" Version="0.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GreeterShared\GreeterShared.csproj" />
+  </ItemGroup>
+
+</Project>
