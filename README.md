@@ -1,5 +1,5 @@
 # Programming for More Fun with You
-설렘이 있는 프로그래밍
+- 설렘
 
 ## 목차 
 
